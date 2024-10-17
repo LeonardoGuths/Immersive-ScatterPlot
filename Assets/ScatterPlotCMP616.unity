@@ -156,9 +156,6 @@ MonoBehaviour:
   columnX: 3
   columnY: 6
   columnZ: 12
-  xName: 
-  yName: 
-  zName: 
   colorAxisX: {r: 1, g: 0, b: 0, a: 1}
   colorAxisY: {r: 0, g: 1, b: 0, a: 1}
   colorAxisZ: {r: 0, g: 0, b: 1, a: 1}
@@ -361,13 +358,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101519890}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.67, y: 1, z: -5}
+  m_LocalRotation: {x: 0.028606432, y: -0.9091756, z: 0.06395642, w: 0.4104766}
+  m_LocalPosition: {x: 111.01, y: 44.1, z: 102.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 8.035, y: -131.401, z: 0.028}
 --- !u!114 &1101519894
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -5,24 +5,31 @@ using System.Globalization;
 
 public class DataPlotter : MonoBehaviour
 {
+    [Header("Arquivo CSV do Dataset")]
+
     public TextAsset inputfile;
     private List<Dictionary<string, object>> pointList;
+    [Header("Configurações de Colunas")]
 
     public int columnX = 1;  // 'Alcohol'
     public int columnY = 2;  // 'MalicAcid'
     public int columnZ = 5;  // 'Magnesium'
 
-    public string xName;
-    public string yName;
-    public string zName;
+    private string xName;
+    private string yName;
+    private string zName;
 
     public Color colorAxisX = Color.red; // Cor para o eixo X
     public Color colorAxisY = Color.green; // Cor para o eixo Y
     public Color colorAxisZ = Color.blue; // Cor para o eixo Z
 
+    [Header("Escala do Plot")]
+
     public float plotScale = 10;
 
     // O prefab para os pontos de dados que serão instanciados
+    [Header("Prefabs")]
+
     public GameObject PointPrefab;
  
     // Objeto que conterá os prefabs instanciados na hierarquia
@@ -153,7 +160,7 @@ void CreatePlot()
 
             // Atribui os valores originais ao dataPointName
             string dataPointName = 
-                pointList[i][xName] + " | " + pointList[i][yName] + " | " + pointList[i][zName];
+                "X: " + pointList[i][xName] + "\nY: " + pointList[i][yName] + "\nZ: " + pointList[i][zName];
 
             dataPoint.GetComponentInChildren<TextMesh>().text = dataPointName;
 
