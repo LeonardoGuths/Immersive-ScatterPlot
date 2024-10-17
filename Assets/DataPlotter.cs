@@ -169,6 +169,7 @@ void CreatePlot()
 
             // Obtém a cor do material e define como uma nova cor RGB que definimos
             dataPoint.GetComponent<Renderer>().material.color = new Color(x, y, z, 1.0f);
+            dataPoint.GetComponent<Renderer>().material.SetColor("_EmissionColor", new Color(x, y, z, 1.0f));
         }
         catch (System.Exception e)
         {
